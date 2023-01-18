@@ -67,7 +67,7 @@ public class Main3 {
 		String[] content = (FileUtils.readFileToString(file, ENCODING)).replace("@", ": ").split("#");
 		
 		for( int i = 0; i < content.length; i++ ) {
-			System.out.println( content[i] );
+			System.out.println( content[i] ); 
 		}
 	}
 	
