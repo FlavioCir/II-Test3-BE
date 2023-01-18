@@ -64,7 +64,11 @@ public class Main3 {
 	}
 
 	public static void leggiFile(File file) throws IOException {
-		System.out.println(FileUtils.readFileToString(file, ENCODING));
+		String[] content = (FileUtils.readFileToString(file, ENCODING)).replace("@", ": ").split("#");
+		
+		for( int i = 0; i < content.length; i++ ) {
+			System.out.println( content[i] );
+		}
 	}
 	
 }
